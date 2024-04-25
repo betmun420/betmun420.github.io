@@ -141,7 +141,8 @@ color: #FFFFFF;
     color: #000000;
     border-radius: 30px;
     margin: 20px 13%;
-    background: linear-gradient(0deg, rgba(202, 202, 0, 1) 0%, rgba(255, 242, 0, 1) 50%, rgba(204, 204, 204, 1) 100%);
+    background: rgb(255,242,0);
+    background: linear-gradient(0deg, rgba(255,242,0,1) 0%, rgba(155,142,0,1) 100%);
     border: 3px solid #000000;
 }
 .or {
@@ -174,6 +175,14 @@ color: #FFFFFF;
     min-width: 340px;
     width: 100%;
     text-align: center;
+}
+
+#jupiter-terminal .text-white\/50 {
+  color: hsl(0, 0%, 0%);
+}
+
+#jupiter-terminal .text-white\/30 {
+  color: hsla(0,0%,0%,.5);
 }
 
 .block3 {
