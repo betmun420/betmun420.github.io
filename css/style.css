@@ -20,7 +20,7 @@ body {
 .header {
     overflow: hidden;
     position: relative;
-    background-image: url("../image/img2.png");
+    background-image: url("../image/compress/img2.png");
     background-size: cover;
     background-position: top;
     text-align: center;
@@ -181,7 +181,7 @@ color: #FFFFFF;
 
 .block3 {
     position: relative;
-    background-image: url("../image/img1.png");
+    background-image: url("../image/compress/img1.png");
     background-size: cover;
     background-position: top;
     height: 1695px;
@@ -210,7 +210,7 @@ color: #FFFFFF;
 }
 .block5 {
     position: relative;
-    background-image: url("../image/img3.png");
+    background-image: url("../image/compress/img3.png");
     background-size: cover;
     background-position: top;
     height: 1400px;
@@ -218,7 +218,7 @@ color: #FFFFFF;
 }
 .block6 {
     position: relative;
-    background-image: url("../image/img8.png");
+    background-image: url("../image/compress/img8.png");
     background-size: cover;
     background-position: top;
     height: 900px;
