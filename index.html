@@ -58,7 +58,6 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="icon" href="image/compress/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@solana/web3.js@latest"></script>
     <script src='https://terminal.jup.ag/main-v2.js'></script>
 </head>
 <body>
@@ -136,44 +135,23 @@
             </a>
         </div>
     </footer>
-    
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    window.Jupiter.init({
-      displayMode: "integrated",
-      integratedTargetId: "integrated-terminal",
-      endpoint: "https://api.tatum.io/v3/blockchain/node/solana-mainnet",
-      strictTokenList: false,
-      defaultExplorer: "Solscan",
-      formProps: {
-        fixedOutputMint: true,
-        initialInputMint: "So11111111111111111111111111111111111111112",
-        initialOutputMint: "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
-      },
-    });
 
-    // Function to handle the deep link to Phantom Wallet
-    function signAndSendTransaction() {
-      // Create a connection to the Solana blockchain
-      const connection = new solanaWeb3.Connection(
-        "https://api.tatum.io/v3/blockchain/node/solana-mainnet"
-      );
-      const transaction = new solanaWeb3.Transaction();
-      // Add instructions to your transaction
-      const serializedTransaction = transaction.serialize();
-      const encodedTransaction = encodeURIComponent(
-        serializedTransaction.toString('base64')
-      );
-
-      // Construct the deep link
-      const deepLinkUrl = `https://phantom.app/ul/signAndSendTransaction?transaction=${encodedTransaction}&appUrl=${encodeURIComponent(window.location.href)}`;
-
-      // Redirect to the deep link URL
-      window.location.href = deepLinkUrl;
-    }
-  });
-</script>
-
+        <script>
+        
+        window.Jupiter.init({
+          displayMode: "integrated",
+          integratedTargetId: "integrated-terminal",
+          endpoint: "https://docs-demo.solana-mainnet.quiknode.pro",
+          strictTokenList: false,
+          formProps: {
+        	  fixedInputMint: false,
+        	  fixedOutputMint: true,
+        	  initialInputMint: "So11111111111111111111111111111111111111112",
+        	  initialOutputMint: "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"  
+          }
+          
+        });
+      </script>
     <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </body>
