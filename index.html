@@ -52,7 +52,7 @@
     <meta name="twitter:description" content="Laughingstock by day, Justice by night"/>
     <meta name="twitter:image" content="https://betmun.xyz/image/compress/favicon.png"/>
     <title>Betmun</title>
-    <script src="https://terminal.jup.ag/main-v2.js" data-preload />
+    <script src='https://terminal.jup.ag/main-v2.js' />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
@@ -139,22 +139,20 @@
 
     <script src="js/script.js"></script>
     <script>
-        
-        window.Jupiter.init({
-          displayMode: "integrated",
-          integratedTargetId: "integrated-terminal",
-          endpoint: "https://docs-demo.solana-mainnet.quiknode.pro",
-          passThroughWallet: true,
-          strictTokenList: false,
-          formProps: {
-        	  fixedInputMint: false,
-        	  fixedOutputMint: true,
-        	  swapMode: "ExactIn",
-        	  initialInputMint: "So11111111111111111111111111111111111111112",
-        	  initialOutputMint: "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"  
-          }
-          
-        });
+window.Jupiter.init({
+  displayMode: "integrated",
+  integratedTargetId: "integrated-terminal",
+  endpoint: "https://api.mainnet-beta.solana.com",
+  strictTokenList: false,
+  defaultExplorer: "Solscan",
+  formProps: {
+    fixedInputMint: true,
+    fixedOutputMint: true,
+    initialOutputMint: "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+    initialSlippageBps: 0,
+  },
+});
+
       </script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </body>
