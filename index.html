@@ -135,27 +135,29 @@
             </a>
         </div>
     </footer>
-
-
+    
+<script>
+  document.addEventListener('readystatechange', (event) => {
+    if (document.readyState === 'complete') {
+      // Initialize the Jupiter plugin
+      window.Jupiter.init({
+        displayMode: "integrated",
+        integratedTargetId: "integrated-terminal",
+        endpoint: "https://docs-demo.solana-mainnet.quiknode.pro",
+        passThroughWallet: true,
+        strictTokenList: false,
+        formProps: {
+          fixedInputMint: false,
+          fixedOutputMint: true,
+          swapMode: "ExactIn",
+          initialInputMint: "So11111111111111111111111111111111111111112",
+          initialOutputMint: "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"  
+        }
+      });
+    }
+  });
+</script>
     <script src="js/script.js"></script>
-     <script>
-        
-        window.Jupiter.init({
-          displayMode: "integrated",
-          integratedTargetId: "integrated-terminal",
-          endpoint: "https://docs-demo.solana-mainnet.quiknode.pro",
-          passThroughWallet: true,
-          strictTokenList: false,
-          formProps: {
-        	  fixedInputMint: false,
-        	  fixedOutputMint: true,
-        	  swapMode: "ExactIn",
-        	  initialInputMint: "So11111111111111111111111111111111111111112",
-        	  initialOutputMint: "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"  
-          }
-          
-        });
-      </script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </body>
 </html>
