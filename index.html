@@ -140,18 +140,20 @@
     <script src="js/script.js"></script>
     <script>
 window.Jupiter.init({
-  displayMode: "integrated",
-  integratedTargetId: "integrated-terminal",
-  endpoint: "https://api.mainnet-beta.solana.com",
-  strictTokenList: false,
-  defaultExplorer: "Solscan",
-  formProps: {
-    fixedInputMint: true,
-    fixedOutputMint: true,
-    initialOutputMint: "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
-    initialSlippageBps: 0,
-  },
-});
+          displayMode: "integrated",
+          integratedTargetId: "integrated-terminal",
+          endpoint: "https://docs-demo.solana-mainnet.quiknode.pro",
+          passThroughWallet: true,
+          strictTokenList: false,
+          formProps: {
+        	  fixedInputMint: false,
+        	  fixedOutputMint: true,
+        	  swapMode: "ExactIn",
+        	  initialInputMint: "So11111111111111111111111111111111111111112",
+        	  initialOutputMint: "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5"  
+          }
+          
+        });
 
       </script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
