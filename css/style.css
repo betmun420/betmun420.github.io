@@ -137,13 +137,7 @@ color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 90px;
-    color: #000000;
-    border-radius: 30px;
-    margin: 20px 13%;
-    background: rgb(255,242,0);
-    background: linear-gradient(180deg, rgba(255,242,0,1) 0%, rgba(155,142,0,1) 100%);
-    border: 3px solid #000000;
+    padding-top:20px;
 }
 .or {
     display: block;
@@ -172,17 +166,17 @@ color: #FFFFFF;
 }
 #integrated-terminal {
     max-width: 525px;
-    min-width: 340px;
+    min-width: 300px;
     width: 100%;
-    text-align: center;
+
 }
 
 #jupiter-terminal .text-white\/50 {
-  color: hsl(0, 0%, 0%);
+  color: #fff !important;
 }
 
 #jupiter-terminal .text-white\/30 {
-  color: hsla(0,0%,0%,.5);
+  color: #fff !important;
 }
 
 .block3 {
@@ -229,19 +223,6 @@ color: #FFFFFF;
     background-position: top;
     height: 900px;
     margin-top: -150px;
-}
-#betwrap {
-        position: relative;
-        width: 500px; 
-        height: 500px;
-        overflow: hidden;
-}
-#betswap {
-        position: absolute;
-        top: -170px; 
-        left: -390px; 
-        width: 1280px;
-        height: 640px;
 }
 .footer {
     padding: 0 10%;
